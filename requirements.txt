@@ -1,7 +1,6 @@
 catboost==0.26
 click==8.0.1
 cycler==0.10.0
-dataclasses==0.8
 Flask==2.0.1
 Flask-Cors==3.0.10
 graphviz==0.16
