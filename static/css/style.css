@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	--primary-color: #ffffff;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+section a {
+	color: rgb(19, 17, 17);
+}
+
+section p {
+	color: rgb(19, 17, 17);
+}
+
+.hero {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {    
+      content: "";
+      background-image: url('https://images.pexels.com/photos/567584/nature-galaxy-milky-way-night-567584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.55;
+}
+
+#info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: rgb(17, 15, 15);
+	min-height: 95vh;
+}
+#about > div,
+#info > div {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+}
+#info > div img {
+	height: 70vh;
+	width: 70%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+#info h2{
+	text-align: center;
+	color: var(--primary-color);
+	font-size: 50px;
+}
+
+#info > div > img {
+	max-width: 75%;
+	height: 75vh;
+}
+
+header {
+	position: relative;
+	top: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+label {
+	display: none;
+}
+
+header .logo {
+	position: relative;
+	font-size: 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+
+header .navigation a {
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 1px;
+	padding: 2px 15px;
+	border-radius: 20px;
+	transition: 0.3s;
+	transition-property: background;
+}
+
+.content {
+	max-width: 650px;
+	margin: 60px 100px;
+}
+
+.content .info h2 {
+	color: var(--primary-color);
+	font-size: 55px;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 2px;
+	line-height: 60px;
+	margin-bottom: 30px;
+}
+
+.content .info p {
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+
+.content .info-btn {
+	color: #fff;
+	background: var(--primary-color);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: 0.3s;
+	transition-property: background;
+}
+
+
+.media-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.media-icons a {
+	position: relative;
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	transition: 0.3s;
+	transition-property: transform;
+}
+
+.media-icons a:not(:last-child) {
+	margin-right: 60px;
+}
+
+.media-icons a:hover {
+	transform: scale(1.5);
+}
+
+#check {
+	z-index: 3;
+	display: none;
+}
+
+footer {
+	background-color: rgb(48, 46, 46);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	color: rgb(233, 227, 227);
+}
+
+footer p {
+	margin-bottom: 15px;
+}
+
